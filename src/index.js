@@ -1,1 +1,1 @@
-console.log('every thing is fine and great');
+console.log('every thing is fine fathy');
