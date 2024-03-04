@@ -652,8 +652,6 @@ function buildAbout(container) {
           </div>
         </div>
       </section> 
-  
-  
   `;
 }
 
