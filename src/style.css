@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -14,23 +16,127 @@ html {
 }
 
 body {
-  background-color: #282828;
+  font-family: 'Merienda', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.logo {
+  width: 5rem;
 }
 
 .btn {
+  font-family: inherit;
   background: none;
   border: none;
-  color: #eee;
-  padding: 0.8rem 2rem;
-  background-color: orangered;
-  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: scale 0.3s;
+  font-size: 1.8rem;
+  padding: 0.8rem 2rem;
+  border-radius: 2px;
+  transition: all 0.3s;
 }
 
 .btn:focus {
   outline: none;
 }
+.btn:hover {
+  background-color: #d3d3d3;
+  color: #111;
+}
 .btn:active {
   scale: 0.98;
+}
+
+.welcome-photo-container {
+  /* background-image: url(./images/slider2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* min-height: 100vh; */
+  position: relative;
+}
+.welcome-photo {
+  width: 100%;
+}
+
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: #fff;
+}
+
+/* About */
+.section-about,
+.section-menu {
+  margin: 8rem auto;
+  max-width: 1200px;
+}
+
+.about-text,
+.menu-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.item-description {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+
+.about-grid {
+  background-color: #f8f9fa;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.about-img {
+  max-width: 100%;
+  height: 100%;
 }
