@@ -99,7 +99,7 @@ header {
 /* About */
 .section-about,
 .section-menu {
-  margin: 8rem auto;
+  margin: 10rem auto;
   max-width: 1200px;
 }
 
@@ -139,4 +139,60 @@ header {
 .about-img {
   max-width: 100%;
   height: 100%;
+}
+
+/* Menu */
+.menus-container {
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  background-color: #f8f9fa;
+  align-items: start;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.menu-photo {
+  width: 100%;
+  height: 230px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.menu-heading {
+  margin-top: 2rem;
+  text-align: left;
+  margin-left: 2rem;
+  align-self: flex-start;
+}
+
+.menu-list {
+  padding: 2rem;
+  list-style: none;
+  transition: all 0.5s;
+}
+.menu-list:hover {
+  scale: 1.1;
+}
+
+.menu-list-item {
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  border-top: 1px solid #d3d3d3;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.menu-list-item:last-child {
+  border-bottom: 0;
 }
